@@ -11,19 +11,19 @@ class GetCampaignRecipients extends JsonSerializableType
     /**
      * @var array<int> $exclusionLists
      */
-    #[JsonProperty('exclusionLists'), ArrayType(['integer'])]
+    #[JsonProperty('exclusionLists'), ArrayType([GetCampaignRecipientsListItem::class])]
     public array $exclusionLists;
 
     /**
      * @var array<int> $lists
      */
-    #[JsonProperty('lists'), ArrayType(['integer'])]
+    #[JsonProperty('lists'), ArrayType([GetCampaignRecipientsListItem::class])]
     public array $lists;
 
     /**
      * @param array{
-     *   exclusionLists: array<int>,
-     *   lists: array<int>,
+     *   exclusionLists: array<GetCampaignRecipientsListItem>,
+     *   lists: array<GetCampaignRecipientsListItem>,
      * } $values
      */
     public function __construct(

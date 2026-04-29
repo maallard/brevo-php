@@ -74,7 +74,7 @@ class GetAllExternalFeedsResponseFeedsItem extends JsonSerializableType
      * @var bool $isInternal Whether this is an internal Brevo system feed
      */
     #[JsonProperty('isInternal')]
-    public bool $isInternal;
+    public ?bool $isInternal;
 
     /**
      * @var ?array<GetAllExternalFeedsResponseFeedsItemHeadersItem> $headers Custom HTTP headers for the feed request
