@@ -57,11 +57,11 @@ class GetSmsCampaignsResponseCampaignsItem extends JsonSerializableType
     #[JsonProperty('status')]
     public string $status;
 
-    /**
-     * @var GetCampaignRecipients $recipients
-     */
-    #[JsonProperty('recipients')]
-    public GetCampaignRecipients $recipients;
+//    /**
+//     * @var GetCampaignRecipients $recipients
+//     */
+//    #[JsonProperty('recipients')]
+//    public GetCampaignRecipients $recipients;
 
     /**
      * @var GetSmsCampaignStats $statistics
@@ -94,7 +94,7 @@ class GetSmsCampaignsResponseCampaignsItem extends JsonSerializableType
         $this->scheduledAt = $values['scheduledAt'] ?? null;
         $this->sender = $values['sender'];
         $this->status = $values['status'];
-        $this->recipients = $values['recipients'];
+//        $this->recipients = $values['recipients'];
         $this->statistics = $values['statistics'];
     }
 
